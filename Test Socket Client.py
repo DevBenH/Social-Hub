@@ -13,7 +13,7 @@ import sys                                                                      
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)                           #SOCK_STREAM opens the TCP socket; AF_INET specifies to use IPv4
 host = "localhost"                                                              #Sets IPv4 of server - NOTE IT IS SET TO localhost WHICH IS YOURSELF
-port = 194                                                                      #Sets port to use (194 is ICR - Instant Chat Relay)
+port = 8000                                                                      #Sets port to use 
 print(host+":"+str(port))                                                       #For testing purposes, to see if the details to connect are correct
 s.connect((host,port))                                                          #Connect to server using the values in variables
 print("Connected to server. Start Chatting!")                                   #Friendly UI?
