@@ -24,13 +24,11 @@ def tr(str):                                                                    
    data = s.recv(1024).decode()                                                 #Decoding response from server
    print(data)                                                                  #Displays response to user
 
-while 2 True:
+while 2:
    r = input()                                                                  #Asking for input to send
    if r == "Exit":
-      2 = False
       sys.exit("User request")                                                  #If text is "Exit", exit the program
    else:
       tr(s)                                                                     #If not "Exit", send text to server
-      2 = True
 
 s.close ()                                                                      #Close connection
