@@ -13,7 +13,7 @@ import socket
 from threading import *
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-host = "192.168.1.71"
+host = "localhost"
 port = 194
 print(host+":"+str(port))
 s.bind((host, port))
